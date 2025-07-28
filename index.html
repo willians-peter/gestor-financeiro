@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+   
+    <title>Na ponta do lápis!</title>
+</head>
+
+<body>
+  <nav>
+        <ul>
+            <li><a href="1">menu</a></li>
+            <li><a href="2">menu</a></li>
+            <li><a href="3">menu</a></li>
+        </ul>
+    </nav>    
+    <div id="titulo">Na ponta do lápis!</div>
+    <p id="saudacao"></p> <!-- idéia de frase motivar -->
+    <div id="data"></div>
+    <div id="hora"></div>
+    <!-- campo input -->
+    <div class = "container" id="campo-input">
+        <div>Data:</div>
+        <button onclick="adicionarTexto('dataHoje')">Hoje</button>
+        <button onclick="adicionarTexto('dataOntem')">Ontem</button>
+        <button onclick="adicionarTexto('2diasAtras')"></button>
+        <button onclick="adicionarTexto('3diasAtras')"></button>
+        <button onclick="adicionarTexto('4diasAtras')"></button>
+        <button onclick="adicionarTexto('5diasAtras')"></button>
+        <button onclick="adicionarTexto('6diasAtras')"></button>
+        <input type="date" id="campo" placeholder="dd-mm-yyyy">
+        <button onclick="adicionarTexto('mercado')">mercado</button>
+        <button onclick="adicionarTexto('restaurante')">restaurante</button>
+        <button onclick="adicionarTexto('padaria')">padaria</button>
+        <button onclick="adicionarTexto('casa')">casa</button>
+        <button onclick="adicionarTexto('diversos')">diversos</button>
+        <button onclick="adicionarTexto('farmacia')">farmácia</button>
+        <button onclick="adicionarTexto('combustivel')">combústivel</button>
+        <button onclick="adicionarTexto('lazer')">lazer</button>
+        <input type="value" id="valor" placeholder="valor">
+        <button onclick="adicionarTexto('registrar')">registrar</button>
+    </div>
+    
+    
+    <!-- ultimos registros -->
+    <div class="container" id="ultimos-registros">
+       <ul>
+            <li> 
+            <!-- Lista de registros será preenchida aqui -->
+            </li>
+       </ul>
+    
+    </div>
+    
+    <div class="container" id="relatorio-mes">
+      <!-- aqui sera exibido o relatorio parcial -->
+    </div>
+
+     <div class="container" id="relatorio-personalizado">
+      <!-- aqui sera exibido o relatorio personalizado -->
+    </div>
+
+     <div class="container" id="editor categorias">
+      <!-- aqui sera exibido o relatorio parcial -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+ 
+<footer>
+    <a href="https://github.com/willians-peter" title="Perfil do GitHub de Willians Peter" target="_blank" style="cursor: pointer; text-decoration: underline;">Visite meu perfil no GitHub:</a>
+    <div id="Contato">
+    <p>Para sugestões, entre em contato:</p>
+    <p><a href="mailto"peterciprianow@gmail.com>peterciprianow@gmail.com</a></p>
+    <p>&copy; Peter Willian's Cipriano. Todos os direitos reservados.</p>
+    </div>
+</footer>
+</html>
